@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         var spaces = Int()
         var steps = Int()
         for i in 0..<n {
-            spaces = 1
+            spaces = i
             repeat {
                 print(" ", terminator: "")
                 spaces += 1
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             repeat {
                 steps -= 1
                 print("#", terminator: "")
-            } while steps > 0
+            } while steps >= 0
             print("\n")
         }
     }
